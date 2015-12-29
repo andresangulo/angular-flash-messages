@@ -1,6 +1,6 @@
 {
 	"name": "angular-flash-messages",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": [
 		"dist/angular-flash-messages.js",
 		"dist/angular-flash-messages.css"
@@ -26,6 +26,7 @@
 		"type": "git",
 		"url": "git://github.com/andresangulo/angular-flash-messages.git"
 	},
+	"license": "MIT",
 	"dependencies": {
 		"angular": "1.4",
 		"angular-translate": "2.8",

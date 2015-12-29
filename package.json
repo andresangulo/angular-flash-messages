@@ -1,8 +1,5 @@
 {
 	"name": "angular-flash-messages",
-	"version": "1.0.0",
-	"description": "Flash message utility and directives for AngularJS",
-	"license": "MIT",
 	"devDependencies": {
 		"grunt": "~0.4.5",
 		"grunt-cli": "~0.1.13",

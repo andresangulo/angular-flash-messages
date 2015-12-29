@@ -23,6 +23,12 @@ The messages are rendered using the directive flash-messages:
 <flash-messages></flash-messages>
 ```
 
+The directive has a type parameter, to show only a specific type if needed:
+
+```
+<flash-messages type="FlashMessages.ERROR"></flash-messages>
+```
+
 ### Service
 They are controlled using the service called FlashMessages. Add a flash message using the add method:
 

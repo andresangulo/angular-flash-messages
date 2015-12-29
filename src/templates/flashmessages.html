@@ -6,10 +6,10 @@
 		     data-ng-class="{'flash-message alert alert-dismissible': true, 'dismissing': message.dismissing, 'alert-danger': (message.type == FlashMessages.ERROR), 'alert-warning': (message.type == FlashMessages.WARNING), 'alert-info': (message.type == FlashMessages.INFORMATION), 'alert-success': (message.type == FlashMessages.SUCCESS)}">
 			<h4>
 				<i data-ng-class="{'icon fa fa-fw': true, 'fa-ban': (message.type == FlashMessages.ERROR), 'fa-warning': (message.type == FlashMessages.WARNING), 'fa-info': (message.type == FlashMessages.INFORMATION), 'fa-check': (message.type == FlashMessages.SUCCESS)}"></i>
-				<span data-ng-if="message.useTranslate" data-ng-bind-html="message.textKey | translate:message.options.parameters"></span>
-				<span data-ng-if="!message.useTranslate" data-ng-bind-html="message.textKey"></span>
+				<span data-ng-if="message.translate" data-ng-bind-html="message.textKey | translate:message.options.parameters"></span>
+				<span data-ng-if="!message.translate" data-ng-bind-html="message.textKey"></span>
 			</h4>
-			{{message.date | date:(message.useTranslate ? ('FlashMessages.date.format' | translate) : 'MMMM d, yyyy \'at\' HH:mm:ss')}}
+			{{message.date | date:(message.translate ? ('FlashMessages.date.format' | translate) : 'MMMM d, yyyy \'at\' HH:mm:ss')}}
 		</div>
 	</div>
 </div>

@@ -4,7 +4,7 @@
 	module.exports = function (grunt) {
 		grunt.loadNpmTasks('grunt-angular-templates');
 		grunt.config('ngtemplates', {
-			'angular-flash-messages': {
+			'angulo-flash-messages': {
 				cwd: 'src',
 				src: 'templates/flashmessages.html',
 				dest: 'src/templates/flashmessages.js'

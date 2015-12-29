@@ -1,9 +1,9 @@
 {
-	"name": "angular-flash-messages",
+	"name": "angulo-flash-messages",
 	"version": "1.0.0",
 	"main": [
-		"dist/angular-flash-messages.js",
-		"dist/angular-flash-messages.css"
+		"dist/angulo-flash-messages.js",
+		"dist/angulo-flash-messages.css"
 	],
 	"ignore": [
 		"src",
@@ -24,7 +24,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/andresangulo/angular-flash-messages.git"
+		"url": "git://github.com/andresangulo/angulo-flash-messages.git"
 	},
 	"license": "MIT",
 	"dependencies": {

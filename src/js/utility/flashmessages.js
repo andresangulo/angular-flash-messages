@@ -72,7 +72,7 @@
 
 		/**
 		 * @ngdoc service
-		 * @name angular-flash-messages:FlashMessages
+		 * @name angulo-flash-messages:FlashMessages
 		 * @description
 		 * Service that provides functions for automating a scope's interaction with the pagination widget and server
 		 */
@@ -336,6 +336,6 @@
 	}
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.provider('FlashMessages', FlashMessagesProvider);
 })();

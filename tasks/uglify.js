@@ -6,8 +6,8 @@
 		grunt.config('uglify', {
 			bundle: {
 				files: [{
-					src: ['dist/angular-flash-messages.js'],
-					dest: 'dist/angular-flash-messages.min.js'
+					src: ['dist/angulo-flash-messages.js'],
+					dest: 'dist/angulo-flash-messages.min.js'
 				}]
 			}
 		});

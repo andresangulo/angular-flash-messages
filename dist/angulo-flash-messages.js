@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('angular-flash-messages', [
+		.module('angulo-flash-messages', [
 			'ngStorage',
 			'pascalprecht.translate'
 		]);
@@ -12,7 +12,7 @@
 
 	/**
 	 * @ngdoc controller
-	 * @name angular-flash-messages:FlashMessagesController
+	 * @name angulo-flash-messages:FlashMessagesController
 	 * @description
 	 * Controller for flash messages directive
 	 */
@@ -26,7 +26,7 @@
 	];
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.controller('FlashMessagesController', FlashMessagesController);
 })();
 (function () {
@@ -34,7 +34,7 @@
 
 	/**
 	 * @ngdoc directive
-	 * @name angular-flash-messages:FlashMessages
+	 * @name angulo-flash-messages:FlashMessages
 	 * @description
 	 * Render the flash messages, optionally filtering them by type
 	 */
@@ -50,7 +50,7 @@
 	}
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.directive('flashMessages', FlashMessages);
 })();
 (function () {
@@ -67,7 +67,7 @@
 	];
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.config(ProvideTranslation);
 })();
 (function () {
@@ -144,7 +144,7 @@
 
 		/**
 		 * @ngdoc service
-		 * @name angular-flash-messages:FlashMessages
+		 * @name angulo-flash-messages:FlashMessages
 		 * @description
 		 * Service that provides functions for automating a scope's interaction with the pagination widget and server
 		 */
@@ -408,10 +408,10 @@
 	}
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.provider('FlashMessages', FlashMessagesProvider);
 })();
-angular.module('angular-flash-messages').run(['$templateCache', function($templateCache) {
+angular.module('angulo-flash-messages').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('templates/flashmessages.html',
@@ -431,13 +431,13 @@ angular.module('angular-flash-messages').run(['$templateCache', function($templa
     "\n" +
     "\t\t\t\t<i data-ng-class=\"{'icon fa fa-fw': true, 'fa-ban': (message.type == FlashMessages.ERROR), 'fa-warning': (message.type == FlashMessages.WARNING), 'fa-info': (message.type == FlashMessages.INFORMATION), 'fa-check': (message.type == FlashMessages.SUCCESS)}\"></i>\r" +
     "\n" +
-    "\t\t\t\t<span data-ng-if=\"message.useTranslate\" data-ng-bind-html=\"message.textKey | translate:message.options.parameters\"></span>\r" +
+    "\t\t\t\t<span data-ng-if=\"message.translate\" data-ng-bind-html=\"message.textKey | translate:message.options.parameters\"></span>\r" +
     "\n" +
-    "\t\t\t\t<span data-ng-if=\"!message.useTranslate\" data-ng-bind-html=\"message.textKey\"></span>\r" +
+    "\t\t\t\t<span data-ng-if=\"!message.translate\" data-ng-bind-html=\"message.textKey\"></span>\r" +
     "\n" +
     "\t\t\t</h4>\r" +
     "\n" +
-    "\t\t\t{{message.date | date:(message.useTranslate ? ('FlashMessages.date.format' | translate) : 'MMMM d, yyyy \\'at\\' HH:mm:ss')}}\r" +
+    "\t\t\t{{message.date | date:(message.translate ? ('FlashMessages.date.format' | translate) : 'MMMM d, yyyy \\'at\\' HH:mm:ss')}}\r" +
     "\n" +
     "\t\t</div>\r" +
     "\n" +

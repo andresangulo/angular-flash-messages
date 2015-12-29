@@ -3,7 +3,7 @@
 
 	/**
 	 * @ngdoc controller
-	 * @name angular-flash-messages:FlashMessagesController
+	 * @name angulo-flash-messages:FlashMessagesController
 	 * @description
 	 * Controller for flash messages directive
 	 */
@@ -17,6 +17,6 @@
 	];
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.controller('FlashMessagesController', FlashMessagesController);
 })();

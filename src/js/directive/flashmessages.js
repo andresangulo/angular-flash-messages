@@ -3,7 +3,7 @@
 
 	/**
 	 * @ngdoc directive
-	 * @name angular-flash-messages:FlashMessages
+	 * @name angulo-flash-messages:FlashMessages
 	 * @description
 	 * Render the flash messages, optionally filtering them by type
 	 */
@@ -19,6 +19,6 @@
 	}
 
 	angular
-		.module('angular-flash-messages')
+		.module('angulo-flash-messages')
 		.directive('flashMessages', FlashMessages);
 })();

@@ -1,17 +1,17 @@
-# angular-flash-messages
+# angulo-flash-messages
 Flash message utility and directives for AngularJS
 
 **[Requirements](#requirements)** **[Installation](#installation)** **[Usage](#usage)**
 
 <a name="requirements"></a>
 ## Requirements
-angular-flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
+angulo-flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
 [font-awesome](https://fortawesome.github.io/Font-Awesome/icons/) as well as [bootstrap CSS](http://getbootstrap.com/css/).
 
 <a name="installation"></a>
 ## Installation
-Simply include the files provided in the dist folder: angular-flash-messages.js and angular-flash-messages.css, or angular-flash-messages.min.js 
-and angular-flash-messages.min.css for the uglified/minified versions. Add the ***angular-flash-messages*** module to your application for flash messages
+Simply include the files provided in the dist folder: angulo-flash-messages.js and angulo-flash-messages.css, or angulo-flash-messages.min.js 
+and angulo-flash-messages.min.css for the uglified/minified versions. Add the ***angulo-flash-messages*** module to your application for flash messages
 to be available.
 
 <a name="usage"></a>

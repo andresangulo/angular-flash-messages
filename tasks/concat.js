@@ -6,7 +6,7 @@
 		grunt.config('concat', {
 			javascript: {
 				src: ['src/js/**/*.js', 'src/templates/*.js'],
-				dest: 'dist/angular-flash-messages.js',
+				dest: 'dist/angulo-flash-messages.js',
 				force: true
 			}
 		});

@@ -1,17 +1,17 @@
-# angulo-flash-messages
+# craod-flash-messages
 Flash message utility and directives for AngularJS
 
 **[Requirements](#requirements)** **[Installation](#installation)** **[Usage](#usage)**
 
 <a name="requirements"></a>
 ## Requirements
-angulo-flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
+craod-flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
 [font-awesome](https://fortawesome.github.io/Font-Awesome/icons/) as well as [bootstrap CSS](http://getbootstrap.com/css/).
 
 <a name="installation"></a>
 ## Installation
-Simply include the files provided in the dist folder: angulo-flash-messages.js and angulo-flash-messages.css, or angulo-flash-messages.min.js 
-and angulo-flash-messages.min.css for the uglified/minified versions. Add the ***angulo-flash-messages*** module to your application for flash messages
+Simply include the files provided in the dist folder: craod-flash-messages.js and craod-flash-messages.css, or craod-flash-messages.min.js 
+and craod-flash-messages.min.css for the uglified/minified versions. Add the ***craod-flash-messages*** module to your application for flash messages
 to be available.
 
 <a name="usage"></a>
@@ -65,6 +65,7 @@ lifetime | 4000 for INFORMATION and SUCCESS, undefined for ERROR and WARNING | T
 dismissDuration | 1000 | The duration of the dismiss animation. For optimal results, make sure you change the length of the dismiss animation on the css if you change it here
 allowDismiss | true | Whether the flash message can be dismissed by clicking on it
 allowDismissCancel | false for INFORMATION and SUCCESS, true for ERROR and WARNING | Whether the dismiss action can be prevented by clicking on the flash message
+translate | FlashMessagesProvider.useTranslate | Whether to run the text through the translate filter
 
 Retrieve messages using the getMessages method:
 
@@ -81,7 +82,7 @@ useLocalStorage | true | Whether to save messages in local storage to prevent th
 useTranslate | false | Whether to render messages using the translate filter, or to render their text directly as html
 
 #### Defaults
-Specify message option defaults using ***FlashMessageProvider.defaults***. You may specify defaults either by type, or using the keyword common:
+Specify message option defaults using **FlashMessageProvider.defaults**. You may specify defaults either by type, or using the keyword *common*:
 
 ```
 FlashMessageProvider.defaults.error = {

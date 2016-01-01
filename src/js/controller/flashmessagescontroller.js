@@ -3,7 +3,7 @@
 
 	/**
 	 * @ngdoc controller
-	 * @name angulo-flash-messages:FlashMessagesController
+	 * @name craod-flash-messages:FlashMessagesController
 	 * @description
 	 * Controller for flash messages directive
 	 */
@@ -17,6 +17,6 @@
 	];
 
 	angular
-		.module('angulo-flash-messages')
+		.module('craod-flash-messages')
 		.controller('FlashMessagesController', FlashMessagesController);
 })();

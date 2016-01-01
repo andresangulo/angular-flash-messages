@@ -1,6 +1,78 @@
 (function () {
 	'use strict';
 
+	angular
+		.module('craod-flash-messages', [
+			'ngStorage',
+			'pascalprecht.translate'
+		]);
+})();
+(function () {
+	'use strict';
+
+	/**
+	 * @ngdoc controller
+	 * @name craod-flash-messages:FlashMessagesController
+	 * @description
+	 * Controller for flash messages directive
+	 */
+	function FlashMessagesController ($scope, FlashMessages) {
+		$scope.FlashMessages = FlashMessages;
+	}
+
+	FlashMessagesController.$inject = [
+		'$scope',
+		'FlashMessages'
+	];
+
+	angular
+		.module('craod-flash-messages')
+		.controller('FlashMessagesController', FlashMessagesController);
+})();
+(function () {
+	'use strict';
+
+	/**
+	 * @ngdoc directive
+	 * @name craod-flash-messages:FlashMessages
+	 * @description
+	 * Render the flash messages, optionally filtering them by type
+	 */
+	function FlashMessages () {
+		return {
+			restrict: 'E',
+			scope: {
+				type: '@?'
+			},
+			templateUrl: 'templates/flashmessages.html',
+			controller: 'FlashMessagesController'
+		};
+	}
+
+	angular
+		.module('craod-flash-messages')
+		.directive('flashMessages', FlashMessages);
+})();
+(function () {
+	'use strict';
+
+	function ProvideTranslation ($translateProvider) {
+		$translateProvider.translations('en', {
+			'FlashMessages.date.format': "MMMM d, yyyy 'at' HH:mm:ss"
+		});
+	}
+
+	ProvideTranslation.$inject = [
+		'$translateProvider'
+	];
+
+	angular
+		.module('craod-flash-messages')
+		.config(ProvideTranslation);
+})();
+(function () {
+	'use strict';
+
 	/**
 	 * @ngdoc provider
 	 * @name FlashMessagesProvider
@@ -339,3 +411,39 @@
 		.module('craod-flash-messages')
 		.provider('FlashMessages', FlashMessagesProvider);
 })();
+angular.module('craod-flash-messages').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('templates/flashmessages.html',
+    "<div class=\"col-xs-12\">\r" +
+    "\n" +
+    "\t<div class=\"col-xs-12 flash-messages\">\r" +
+    "\n" +
+    "\t\t<div data-ng-repeat=\"message in FlashMessages.getMessages()\"\r" +
+    "\n" +
+    "\t\t     data-ng-if=\"!type || message.type == type\"\r" +
+    "\n" +
+    "\t\t     data-ng-click=\"message.dismissing ? (message.options.allowDismissCancel ? FlashMessages.cancelDismissing(message) : '') : (message.options.allowDismiss ? FlashMessages.dismiss(message) : '')\"\r" +
+    "\n" +
+    "\t\t     data-ng-class=\"{'flash-message alert alert-dismissible': true, 'dismissing': message.dismissing, 'alert-danger': (message.type == FlashMessages.ERROR), 'alert-warning': (message.type == FlashMessages.WARNING), 'alert-info': (message.type == FlashMessages.INFORMATION), 'alert-success': (message.type == FlashMessages.SUCCESS)}\">\r" +
+    "\n" +
+    "\t\t\t<h4>\r" +
+    "\n" +
+    "\t\t\t\t<i data-ng-class=\"{'icon fa fa-fw': true, 'fa-ban': (message.type == FlashMessages.ERROR), 'fa-warning': (message.type == FlashMessages.WARNING), 'fa-info': (message.type == FlashMessages.INFORMATION), 'fa-check': (message.type == FlashMessages.SUCCESS)}\"></i>\r" +
+    "\n" +
+    "\t\t\t\t<span data-ng-if=\"message.translate\" data-ng-bind-html=\"message.textKey | translate:message.options.parameters\"></span>\r" +
+    "\n" +
+    "\t\t\t\t<span data-ng-if=\"!message.translate\" data-ng-bind-html=\"message.textKey\"></span>\r" +
+    "\n" +
+    "\t\t\t</h4>\r" +
+    "\n" +
+    "\t\t\t{{message.date | date:(message.translate ? ('FlashMessages.date.format' | translate) : 'MMMM d, yyyy \\'at\\' HH:mm:ss')}}\r" +
+    "\n" +
+    "\t\t</div>\r" +
+    "\n" +
+    "\t</div>\r" +
+    "\n" +
+    "</div>"
+  );
+
+}]);

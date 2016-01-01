@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('angulo-flash-messages', [
+		.module('craod-flash-messages', [
 			'ngStorage',
 			'pascalprecht.translate'
 		]);

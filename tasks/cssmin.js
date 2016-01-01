@@ -6,8 +6,8 @@
 		grunt.config('cssmin', {
 			dist: {
 				files: [{
-					src: ['dist/angulo-flash-messages.css'],
-					dest: 'dist/angulo-flash-messages.min.css'
+					src: ['dist/craod-flash-messages.css'],
+					dest: 'dist/craod-flash-messages.min.css'
 				}]
 			}
 		});

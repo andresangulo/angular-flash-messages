@@ -12,6 +12,6 @@
 	];
 
 	angular
-		.module('angulo-flash-messages')
+		.module('craod-flash-messages')
 		.config(ProvideTranslation);
 })();

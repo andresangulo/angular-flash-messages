@@ -1,9 +1,9 @@
 {
-	"name": "craod-flash-messages",
+	"name": "flash-messages",
 	"version": "1.0.0",
 	"main": [
-		"dist/craod-flash-messages.js",
-		"dist/craod-flash-messages.css"
+		"dist/flash-messages.js",
+		"dist/flash-messages.css"
 	],
 	"ignore": [
 		"src",
@@ -24,7 +24,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/craod/craod-flash-messages.git"
+		"url": "git://github.com/craod/flash-messages.git"
 	},
 	"license": "MIT",
 	"dependencies": {

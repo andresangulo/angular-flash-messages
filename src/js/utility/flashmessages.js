@@ -72,7 +72,7 @@
 
 		/**
 		 * @ngdoc service
-		 * @name craod-flash-messages:FlashMessages
+		 * @name flash-messages:FlashMessages
 		 * @description
 		 * Service that provides functions for automating a scope's interaction with the pagination widget and server
 		 */
@@ -336,6 +336,6 @@
 	}
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.provider('FlashMessages', FlashMessagesProvider);
 })();

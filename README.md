@@ -1,17 +1,17 @@
-# craod-flash-messages
+# flash-messages
 Flash message utility and directives for AngularJS
 
 **[Requirements](#requirements)** **[Installation](#installation)** **[Usage](#usage)**
 
 <a name="requirements"></a>
 ## Requirements
-craod-flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
+flash-messages only requires AngularJS to work. However, in order to use the default template design, your website must use 
 [font-awesome](https://fortawesome.github.io/Font-Awesome/icons/) as well as [bootstrap CSS](http://getbootstrap.com/css/).
 
 <a name="installation"></a>
 ## Installation
-Simply include the files provided in the dist folder: craod-flash-messages.js and craod-flash-messages.css, or craod-flash-messages.min.js 
-and craod-flash-messages.min.css for the uglified/minified versions. Add the ***craod-flash-messages*** module to your application for flash messages
+Simply include the files provided in the dist folder: flash-messages.js and flash-messages.css, or flash-messages.min.js 
+and flash-messages.min.css for the uglified/minified versions. Add the ***flash-messages*** module to your application for flash messages
 to be available.
 
 <a name="usage"></a>

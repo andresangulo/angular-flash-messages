@@ -6,8 +6,8 @@
 		grunt.config('uglify', {
 			bundle: {
 				files: [{
-					src: ['dist/craod-flash-messages.js'],
-					dest: 'dist/craod-flash-messages.min.js'
+					src: ['dist/flash-messages.js'],
+					dest: 'dist/flash-messages.min.js'
 				}]
 			}
 		});

@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('craod-flash-messages', [
+		.module('flash-messages', [
 			'ngStorage',
 			'pascalprecht.translate'
 		]);
@@ -12,7 +12,7 @@
 
 	/**
 	 * @ngdoc controller
-	 * @name craod-flash-messages:FlashMessagesController
+	 * @name flash-messages:FlashMessagesController
 	 * @description
 	 * Controller for flash messages directive
 	 */
@@ -26,7 +26,7 @@
 	];
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.controller('FlashMessagesController', FlashMessagesController);
 })();
 (function () {
@@ -34,7 +34,7 @@
 
 	/**
 	 * @ngdoc directive
-	 * @name craod-flash-messages:FlashMessages
+	 * @name flash-messages:FlashMessages
 	 * @description
 	 * Render the flash messages, optionally filtering them by type
 	 */
@@ -50,7 +50,7 @@
 	}
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.directive('flashMessages', FlashMessages);
 })();
 (function () {
@@ -67,7 +67,7 @@
 	];
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.config(ProvideTranslation);
 })();
 (function () {
@@ -144,7 +144,7 @@
 
 		/**
 		 * @ngdoc service
-		 * @name craod-flash-messages:FlashMessages
+		 * @name flash-messages:FlashMessages
 		 * @description
 		 * Service that provides functions for automating a scope's interaction with the pagination widget and server
 		 */
@@ -408,10 +408,10 @@
 	}
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.provider('FlashMessages', FlashMessagesProvider);
 })();
-angular.module('craod-flash-messages').run(['$templateCache', function($templateCache) {
+angular.module('flash-messages').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('templates/flashmessages.html',

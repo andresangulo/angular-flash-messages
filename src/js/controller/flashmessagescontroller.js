@@ -3,7 +3,7 @@
 
 	/**
 	 * @ngdoc controller
-	 * @name craod-flash-messages:FlashMessagesController
+	 * @name flash-messages:FlashMessagesController
 	 * @description
 	 * Controller for flash messages directive
 	 */
@@ -17,6 +17,6 @@
 	];
 
 	angular
-		.module('craod-flash-messages')
+		.module('flash-messages')
 		.controller('FlashMessagesController', FlashMessagesController);
 })();

@@ -1,5 +1,5 @@
 {
-	"name": "craod-flash-messages",
+	"name": "flash-messages",
 	"devDependencies": {
 		"grunt": "~0.4.5",
 		"grunt-cli": "~0.1.13",

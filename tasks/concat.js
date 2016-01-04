@@ -6,7 +6,7 @@
 		grunt.config('concat', {
 			javascript: {
 				src: ['src/js/**/*.js', 'src/templates/*.js'],
-				dest: 'dist/craod-flash-messages.js',
+				dest: 'dist/flash-messages.js',
 				force: true
 			}
 		});
